@@ -45,4 +45,14 @@
 
     Y luego para enviar la ultima informacion que tengamos al servidor usamos
         git push "nombre servidor" master (branch principal)
+
+    Para deshacer un cambio antes un git add "file" usamos: git reverse "file"
+
+    Para deshacer un cambio despues de git add "file" usamos: git reverse --staged "file"
+
+    Para deshacer un cambio despues de un commit, lo que debemos hacer es,
+        1. Entrar a los cambios con el comando git log
+        2. Luego copiar la direccion del commit
+        3. Colocar el comando git reverse direccion del comit
+        4. Salir y guardar y los cambios se habran revertido
  -->
