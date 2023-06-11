@@ -9,7 +9,7 @@
     <ul>
         <li>Docker: Creando container sin dolor de cabeza</li>
         <li>Vagrant: Gerenciando máquinas virtuales</li>
-        <li>Ansible</li>
+        <li>Ansible: Su infraestructura como código</li>
         <li>Integración Continua: Madurez y productividad en el Desarrollo de Software</li>
         <li>Kubernetes: Introduccion a la orquestacion de containers</li>
     </ul>
@@ -55,4 +55,13 @@
         2. Luego copiar la direccion del commit
         3. Colocar el comando git reverse direccion del comit
         4. Salir y guardar y los cambios se habran revertido
+
+    Si queremos guardar un codigo que aun no esta terminado pero que no queremos borrar
+    debemos de seguir los siguientes pasos para terminarlo en otro momento:
+        1. git stash para guardar el archivo en una lista de espera
+        2. Luego procedemos a ver en donde quedo guardo nuestro cambio git stash list
+        3. Para aplicar los cambios temporales guardos usamos el comando git stash aplly 0
+           esto lo que hace es revertir los cambios pero el archivo sigue continuando
+           en las lista de cambios temporales
+        4. Para recuperar los datos y eliminar el archivo temporal de la lista usamos: git stash pop
  -->
